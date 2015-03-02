@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Productos más usados</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div align="center">
+		<p><h1>Productos más usados en una Provincia </h1></p>
+		</div>
+		<div class=menu>
+		<p> Aqui ira el menu </p>
+		</div>
+		<center>
+		<select name="provincia_id" id="categoria_id" tabindex="1">
+			<option value="">-- Seleciona provincia --</option>
+			<optgroup label="ccaa 1">
+				<option value="1">provincia 1</option>
+				<option value="9">provincia 2</option>
+			</optgroup>
+			<optgroup label="ccaa 2">
+				<option value="2">provincia 1</option>
+				<option value="3">provincia 2</option>
+				<option value="6">provincia 3</option>
+				<option value="7" disabled="disabled">provincia 4</option>
+				<option value="8">provincia 5</option>
+			</optgroup>
+			<optgroup label="ccaa 3" disabled="disabled">
+				<option value="5">provincia 1</option>
+				<option value="11">provincia 2</option>
+			</optgroup>
+			<option value="4">provincia 1</option>
+			<option value="10">provincia 2</option>
+		</select>
+		</center>
+
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+		<script type="text/javascript">
+		$(function () {
+			$("#categoria_id").selectbox();
+		});
+		</script>
+	</body>
+</html>
